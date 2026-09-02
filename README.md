@@ -1,2 +1,1 @@
-# Hair-Candy-Luxury-Salon-
-It's demo
+index.html

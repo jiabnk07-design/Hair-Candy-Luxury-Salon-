@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hair Candy Luxury Salon | Premium Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#454544",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-fixed-dim": "#e9c349",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "on-background": "#e5e2e1",
+                        "surface": "#131313",
+                        "tertiary-container": "#b4b2b2",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "tertiary": "#d0cdcd",
+                        "outline-variant": "#4d4635",
+                        "surface-variant": "#353534",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#494a38",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-fixed": "#e4e4cc",
+                        "on-secondary-fixed-variant": "#474836",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-tertiary": "#313030",
+                        "on-secondary": "#303221",
+                        "surface-dim": "#131313",
+                        "surface-container-highest": "#353534",
+                        "on-primary-fixed": "#241a00",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#b9baa3",
+                        "inverse-primary": "#735c00",
+                        "on-primary-container": "#554300",
+                        "primary-fixed": "#ffe088",
+                        "on-primary": "#3c2f00",
+                        "on-surface": "#e5e2e1",
+                        "on-primary-fixed-variant": "#574500",
+                        "inverse-surface": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "primary": "#f2ca50",
+                        "on-surface-variant": "#d0c5af",
+                        "background": "#131313",
+                        "outline": "#99907c",
+                        "surface-container-high": "#2a2a2a",
+                        "primary-container": "#d4af37",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#e5e2e1",
+                        "surface-tint": "#e9c349",
+                        "surface-bright": "#3a3939",
+                        "surface-container": "#201f1f",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "secondary": "#c8c8b0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Montserrat"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-sm": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .gold-border-focus {
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        .gold-border-focus:focus-within {
+            border-color: #D4AF37;
+        }
+        .img-hover-effect img {
+            transition: filter 0.5s ease, transform 0.5s ease;
+            filter: grayscale(80%) contrast(1.1);
+        }
+        .img-hover-effect:hover img {
+            filter: grayscale(0%) contrast(1);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md dark:bg-surface/90 border-b border-primary/20 shadow-sm transition-all duration-300" id="navbar">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<a class="font-display-lg text-[24px] tracking-tighter text-primary dark:text-primary hover:opacity-80 transition-opacity duration-300" href="#">
+                Hair Candy
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 duration-300" href="#about">About</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 duration-300" href="#services">Services</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 duration-300" href="#gallery">Gallery</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 duration-300" href="#contact">Contact</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-sm text-label-sm px-6 py-3 rounded-DEFAULT hover:bg-primary transition-colors duration-300 active:scale-95" href="#contact">
+                Book Appointment
+            </a>
+<button aria-label="Menu" class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/60 z-10"></div>
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF876wGQWsL5xNEhEJ4JFI-O-adO8OeMEjs5vpaJbib_qiR6a7NHq-M52q8kdEWuw4Sz1Tq22aE6l57ge9BxBP_3MINXAytWV-CnMQLp29x-cKCP7Ei89rQeNsGnI97om2pwn2AebyifP8VDzGmkGCHa-DuI5_uJYYr9rq9JVTQbsoS8HHpAvSDOuTpzCOw_3UETpKeslFY_nDJz25fClYE1uHR2J78xtgt65V3QW5zaU3g68IqNmJ"/>
+</div>
+<div class="relative z-20 text-center px-margin-mobile max-w-4xl mx-auto flex flex-col items-center">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6 animate-fade-in-up">
+                Hair Candy Luxury Salon
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">
+                Salon Experience Like No Other. Discover the pinnacle of minimalist luxury and precision styling.
+            </p>
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-sm text-label-sm px-8 py-4 rounded-DEFAULT hover:bg-primary transition-colors duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]" href="#contact">
+                Book Appointment
+            </a>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-margin-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">The Art of Grooming</h2>
+<div class="w-12 h-[1px] bg-primary mb-8"></div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Established in 2021, Hair Candy represents a sanctuary of modern elegance. We blend corporate precision with high-contrast sophistication to deliver a premium grooming experience tailored for the discerning individual.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Our expert stylists approach each client with meticulous attention to detail, ensuring every visit is not just a service, but a crafted ritual in a serene, luxurious atmosphere.
+                </p>
+</div>
+<div class="relative h-[500px] border border-outline-variant p-4 img-hover-effect overflow-hidden">
+<img class="w-full h-full object-cover rounded-sm" data-alt="A sophisticated, minimalist salon interior featuring dark matte walls, a sleek marble styling station, and a solitary, perfectly illuminated gold-framed mirror reflecting a serene, high-end atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRbkYEVzGJ3pM2hdnoUlmAIWu-y9KzE3wXuhlfZ5E8pRjSJjm5JrmVvK1UCoxrVbqQAyWG7WOiRyr8W-Fro5ARsbYWhGSCYJ92FgGASnxkAUka1NhPj8FYlvZdaFgxdaSxnFctb-BY8h0WLmq-MAhkwpZmZN91Yi3AEBtm8f1P4iKYGyBBSu_vnV0VSrI7tehUcs3U4vgGLfjK0-UyFVpf4peVcG3IErj_lKbyLfNSwx1tK9wpCKtn"/>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="py-margin-desktop bg-surface-container-low px-margin-mobile md:px-margin-desktop" id="services">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Our Services</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Curated excellence for your personal aesthetic.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-unit h-auto md:h-[800px]">
+<!-- Hair (Large) -->
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden border border-surface-variant bg-surface img-hover-effect h-[400px] md:h-auto">
+<img alt="" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJiFQpV8KZfVhozTDQZKgovu-uFZp-pzf4LLdcs16697enqlOZkpcLqp5Ky_YNED60364bKfzJ5gSyubW4aRk-hfWLTNbvNyWz_BPdcMfCu-lyRnAAxkfFuOvCPzUZYZkbXpOSTkBvkW7txWTTslQ5gWtVApCesGG04KFrYIjXbhPDbf4l2IleszGEMAPs8bJhC2-UM0-4zpaOrUkSiTFHi4fKJ63gsMLFHh5gKdJ8wsy6osAIZkk7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block border border-primary text-primary px-3 py-1 font-label-sm text-[10px] uppercase tracking-widest mb-4">Hair</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Expert Styling</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Precision cuts and exclusive L'Oréal Professionnel treatments designed to elevate your natural texture.</p>
+</div>
+</div>
+<!-- Beauty -->
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden border border-surface-variant bg-surface img-hover-effect h-[400px] md:h-auto">
+<img alt="" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8oyWZ485PRhkN-POykmXTignKjPSZgrskactSXARF6ZS7UEttHuHk0DsXVVV8gY8iVwpXptzEzS_jbwCDPJi5tH8bKmYUAn76qB1BERYW-RNoQeV4nyqC20MTR4N9QzaA9N_SUl1y3UGG3G4fDqVjs3aCoClasw_9N3NiYA0dw8eabcTJiE8MWWqEMFqYJb1fPlAI5EZO6rDp_wC7EL1O9bbfIxWCmSfCQwcCt4-ycye7xp5_08J6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block border border-primary text-primary px-3 py-1 font-label-sm text-[10px] uppercase tracking-widest mb-4">Beauty</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Skin Rituals</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Advanced rejuvenation techniques.</p>
+</div>
+</div>
+<!-- Nails -->
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden border border-surface-variant bg-surface img-hover-effect h-[400px] md:h-auto">
+<img alt="" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTJsr0R4RwND37X1USJSSHpjwvS93Lzhmdous8aFqGu0pRkkbz7-2VST8ZZgkZ1jeDnd1JzuMQsQ3GNstxVGaVlCGC5lB0PWCe8dEO0zfeA52S26prEErAI01b_qRgKbwXFhBZkEBZ_X6jWKgChMgGmBHAHGiDqTTHiUyV3MndEnLWWJOnc5y8D2Cyf8x8uH_ILdzQ6xTgSglIsGA8LUMG20M_ltB9HNaJ37XQg-n59JM_BTbEy-dT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block border border-primary text-primary px-3 py-1 font-label-sm text-[10px] uppercase tracking-widest mb-4">Nails</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Luxury Nail Art</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Detailed, durable elegance.</p>
+</div>
+</div>
+<!-- Makeup -->
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden border border-surface-variant bg-surface img-hover-effect h-[400px] md:h-auto">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" data-alt="A close-up shot of a makeup artist delicately applying premium cosmetics to a model's face. The lighting is soft and flattering, highlighting glowing skin and sophisticated, subtle glam makeup against a dark, out-of-focus salon background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwt2UnltWtqhD5q-hLYTlN7CJIG8lj1Ol1WipsygqtPWLCZzm1H-5eIQNZZMKJslRhgkK36uv5ghZkieHAhwkIOB2RLRTLKjFnynVVJQ-OwaIzmTfI4ZFAJ0YJKG6_zEXCsN4VABAvyV2y_US_WA_qZXkVQFF-J8Q7RfIbzw5rAxK-qR34b-D1zNrDasthfhT82IRjxHpWYSSEBBWpfA4cvzEA5qg5PXtrjkv0WcwC-S9sMqZ1hXVR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block border border-primary text-primary px-3 py-1 font-label-sm text-[10px] uppercase tracking-widest mb-4">Makeup</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Bridal &amp; Event Glam</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Flawless execution for your most significant moments, utilizing premium, long-lasting products.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-margin-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="star" style="font-variation-settings: 'wght' 100;">star</span>
+<h4 class="font-headline-md text-[20px] text-on-surface mb-3">L'Oréal Professionnel</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Proud partners delivering world-class hair care and color innovations.</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="spa" style="font-variation-settings: 'wght' 100;">spa</span>
+<h4 class="font-headline-md text-[20px] text-on-surface mb-3">Luxury Ambience</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">A meticulously designed sanctuary offering a discreet, relaxing environment.</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="cut" style="font-variation-settings: 'wght' 100;">cut</span>
+<h4 class="font-headline-md text-[20px] text-on-surface mb-3">Master Stylists</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Highly experienced professionals dedicated to continuous education and precision.</p>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-margin-desktop bg-surface-container-highest" id="gallery">
+<div class="max-w-[1600px] mx-auto px-unit">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-unit">
+<div class="aspect-square overflow-hidden img-hover-effect">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTJsr0R4RwND37X1USJSSHpjwvS93Lzhmdous8aFqGu0pRkkbz7-2VST8ZZgkZ1jeDnd1JzuMQsQ3GNstxVGaVlCGC5lB0PWCe8dEO0zfeA52S26prEErAI01b_qRgKbwXFhBZkEBZ_X6jWKgChMgGmBHAHGiDqTTHiUyV3MndEnLWWJOnc5y8D2Cyf8x8uH_ILdzQ6xTgSglIsGA8LUMG20M_ltB9HNaJ37XQg-n59JM_BTbEy-dT"/>
+</div>
+<div class="aspect-square overflow-hidden img-hover-effect">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8oyWZ485PRhkN-POykmXTignKjPSZgrskactSXARF6ZS7UEttHuHk0DsXVVV8gY8iVwpXptzEzS_jbwCDPJi5tH8bKmYUAn76qB1BERYW-RNoQeV4nyqC20MTR4N9QzaA9N_SUl1y3UGG3G4fDqVjs3aCoClasw_9N3NiYA0dw8eabcTJiE8MWWqEMFqYJb1fPlAI5EZO6rDp_wC7EL1O9bbfIxWCmSfCQwcCt4-ycye7xp5_08J6"/>
+</div>
+<div class="aspect-square overflow-hidden img-hover-effect">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJiFQpV8KZfVhozTDQZKgovu-uFZp-pzf4LLdcs16697enqlOZkpcLqp5Ky_YNED60364bKfzJ5gSyubW4aRk-hfWLTNbvNyWz_BPdcMfCu-lyRnAAxkfFuOvCPzUZYZkbXpOSTkBvkW7txWTTslQ5gWtVApCesGG04KFrYIjXbhPDbf4l2IleszGEMAPs8bJhC2-UM0-4zpaOrUkSiTFHi4fKJ63gsMLFHh5gKdJ8wsy6osAIZkk7"/>
+</div>
+<div class="aspect-square overflow-hidden img-hover-effect">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF876wGQWsL5xNEhEJ4JFI-O-adO8OeMEjs5vpaJbib_qiR6a7NHq-M52q8kdEWuw4Sz1Tq22aE6l57ge9BxBP_3MINXAytWV-CnMQLp29x-cKCP7Ei89rQeNsGnI97om2pwn2AebyifP8VDzGmkGCHa-DuI5_uJYYr9rq9JVTQbsoS8HHpAvSDOuTpzCOw_3UETpKeslFY_nDJz25fClYE1uHR2J78xtgt65V3QW5zaU3g68IqNmJ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer / Contact -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant w-full py-16" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Brand -->
+<div class="flex flex-col gap-6">
+<h2 class="font-headline-md text-headline-md text-primary">Hair Candy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Elevating personal grooming to an art form.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary border border-primary px-6 py-3 hover:bg-primary hover:text-black transition-colors duration-300 w-fit mt-4" href="https://wa.me/919625226106">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                    Book via WhatsApp
+                </a>
+</div>
+<!-- Contact Info -->
+<div class="flex flex-col gap-4">
+<h3 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-2">Location &amp; Contact</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    B-170, Block B, Lok Vihar,<br/>
+                    Pitampura, Delhi – 110034
+                </p>
+<p class="font-body-md text-body-md text-primary mt-2">
+                    +91 9625226106
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-col gap-4">
+<h3 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-2">Connect</h3>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram @haircandysalon.pitampura</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Location Map</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-surface-variant flex flex-col md:flex-row justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<p>© 2024 Hair Candy Luxury Salon. All rights reserved.</p>
+<p class="mt-4 md:mt-0 opacity-50 flex items-center gap-2">
+                Partners with <span class="uppercase tracking-widest text-[10px]">L'Oréal Professionnel</span>
+</p>
+</div>
+</footer>
+<script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md', 'border-b', 'border-primary/20');
+            } else {
+                nav.classList.remove('shadow-md', 'border-b', 'border-primary/20');
+            }
+        });
+    </script>
+</body></html>
